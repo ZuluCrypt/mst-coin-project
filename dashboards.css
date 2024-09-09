@@ -1,0 +1,632 @@
+header {
+  font-family: "Young Serif";
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+nav {
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+nav ul li:hover {
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+nav ul li.topnav-left {
+  float: left;
+}
+#topnav-right {
+  float: right;
+}
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+table {
+  font-family: "Young Serif";
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+      to bottom,
+      rgba(40, 46, 83, 0.52),
+      rgba(62, 46, 58, 0.73)
+    ),
+    url(images/back5.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-content {
+  padding: 20px;
+}
+/* .container {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: flex-start; */
+  /* padding: 0; */
+  /* margin: 0;
+  width: 100%;
+} */
+
+
+/* Summary Container */
+.summary-container {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: contents;
+}
+
+.summary-container h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.summary-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.summary-item {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: #060606;
+}
+
+.blue-bg {
+  background-color: #c5c5c587;
+}
+
+.green-bg {
+  background-color: #c5c5c587;
+}
+
+.yellow-bg {
+  background-color: #c5c5c587;
+}
+
+.summary-item h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* Transactions Container */
+.transactions-container {
+  display: contents;
+  background-color: #000000;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.transactions-container h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transaction-table th {
+  padding: 10px;
+  text-align: left;
+  background-color: #333;
+  color: #fff;
+}
+
+.transaction-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .summary-item {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style for Buy Section */
+.buy-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.buy-section h2 {
+  font-size: 32px;
+  color: #0efd4a;
+}
+
+.buy-section p {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.buy-section button {
+  background-color: #464646;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-section button:hover {
+  background-color: #be0000;
+}
+
+/* Style for Sell Section */
+.sell-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.sell-section h2 {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.sell-section p {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.sell-section button {
+  background-color: #464646;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sell-section button:hover {
+  background-color: #1f8d43;
+}
+
+/* Style for Balance of Coins Section */
+.balance-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.balance-section h2 {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.balance-section p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.balance-value {
+  font-size: 36px;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+/* Style for Update Balance Button */
+#updateBalanceButton {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#updateBalanceButton:hover {
+  background-color: #0056b3;
+}
+
+/* Style for Coins Currently in the Market Section */
+.market-coins-section {
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.market-coins-section h2 {
+  font-family: "Young Serif";
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.coin-item {
+  display: inline-block;
+  background-color: #000000ae;
+  border: 1px solid #ddd;
+padding: 25px;
+  margin-bottom:3%;
+  margin-left: 3%;
+  margin-right: 5%;
+  margin-top: 5%;
+  /* margin: 20px 13%; */
+  text-align: center;
+  border-radius: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: auto;
+}
+
+.coin-item img {
+  transition: transform 0.7s ease-in-out;
+}
+.coin-item img:hover {
+  transform: rotate(360deg);
+}
+/* .coin-item img {
+  animation: flash 5000ms ease infinite alternate;
+}
+@keyframes flash {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+} */
+
+.coin-item img {
+  animation: gelatine 0.5s infinite;
+}
+@keyframes gelatine {
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+.flip {
+  backface-visibility: visible !important;
+  animation: flip 2s ease infinite;
+}
+@keyframes flip {
+  0% {
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out;
+  }
+  40% {
+    transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: perspective(400px) rotateY(360deg) scale(0.95);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: perspective(400px) scale(1);
+    animation-timing-function: ease-in;
+  }
+}
+
+.coin-item p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.coin-item button {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 25px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.coin-item button:hover {
+  background-color: #22e209;
+}
+
+/* Create a three-column layout */
+.coin-item {
+  width: calc(33.33% - 20px);
+  margin-right: 20px;
+  float: left;
+}
+
+/* Clear floats to start a new row */
+.coin-item:nth-child(3n) {
+  margin-right: 0;
+  clear: both;
+}
+
+/*countdown timer*/
+.countdown-timer {
+  font-family: "Young Serif";
+  margin-top: -20px;
+  text-align: center;
+  height: 100%;
+}
+.countdown-timer h2 {
+  margin: auto;
+  font-size: 40px;
+  font-weight: 400;
+}
+.countdown-timer p {
+  font-size: 25px;
+}
+.launch-timer {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0% 25% 10%;
+}
+.launch-timer div {
+  flex-basis: 100%;
+}
+.launch-timer div p {
+  font-size: 60px;
+  margin-bottom: -14px;
+}
+/* Small screens (e.g., smartphones) */
+@media (max-width: 767px) {
+  header {
+    font-size: 24px; /* Increase font size for better readability on small screens */
+  }
+
+  /* Adjust other section styles as needed for small screens */
+
+  /* Center the columns */
+.coin-item {
+  text-align: center;
+  margin: 0 auto; /* Center the coin-item horizontally */
+  max-width: 320px; /* Limit the maximum width of the coin items */
+}
+
+/* Prevent horizontal scrolling on smaller screens */
+@media (max-width: 768px) {
+  .coin-item {
+    width: 90%; /* Make the columns take up 90% of the viewport width */
+  }
+  body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+}
+
+  .coin-item img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .coin-item p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* Small screens (e.g., smartphones) */
+@media (max-width: 767px) {
+  .countdown-timer {
+    text-align: center; /* Center-align the timer content */
+    padding: 20px;
+  }
+
+  .launch-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow timer elements to wrap on small screens */
+  }
+
+  .launch-timer div {
+    text-align: center;
+    margin: 10px;
+  }
+
+  .launch-timer p {
+    font-size: 24px; /* Increase font size for better readability on small screens */
+  }
+
+  .launch-timer span {
+    font-size: 14px; /* Adjust font size for timer labels */
+  }
+  .table-container {
+    overflow-x: auto; /* Add horizontal scroll for the container */
+  }
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+/* Side Panel Styles */
+.bank-details {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px; /* Adjust the width as needed */
+  float: left;
+}
+
+.bank-details h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.bank-details p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Style for bank details */
+.bank-details {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+/* The side navigation menu */
+.sidenav {
+  list-style: none;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #4c4c4cbb; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.6s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff9f9;
+  display: block;
+  transition: 0.4s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.menu-icon,
+#myBtn {
+  font-size: 35px;
+  backface-visibility: visible !important;
+  /* animation: flip 10s ease infinite; */
+}
+@keyframes flip {
+  0% {
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out;
+  }
+  40% {
+    transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: perspective(400px) rotateY(360deg) scale(0.95);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: perspective(400px) scale(1);
+    animation-timing-function: ease-in;
+  }
+}
+
+/* top scroll button */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  /* background-color: red; Set a background color */
+  color: rgb(0, 0, 0); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 25px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}

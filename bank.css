@@ -1,0 +1,160 @@
+nav {
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+nav ul li:hover {
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+nav ul li.topnav-left {
+  float: left;
+}
+nav ul li.topnav-right {
+  float: right;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: url(images/back01.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Style for Banking Details Section */
+.bank-details-section {
+  max-width: 600px;
+  padding: 60px 0;
+}
+
+.bank-details-section h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.bank-details-section p {
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.bank-details-section form {
+  margin: 0 auto;
+}
+
+.bank-details-section .form-group {
+  margin-bottom: 20px;
+}
+
+.bank-details-section label {
+  font-weight: bold;
+}
+
+.bank-details-section .form-control {
+  max-width: 600px;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #f2f2f2;
+}
+
+.bank-details-section button {
+  background-color: #137;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.bank-details-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for Profile Details Section */
+.profile-details-section {
+  padding: 60px 0;
+}
+
+.profile-details-section h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.profile-details-section p {
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.profile-details-section form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-details-section .form-group {
+  margin-bottom: 20px;
+}
+
+.profile-details-section label {
+  font-weight: bold;
+}
+
+.profile-details-section .form-control {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #f2f2f2;
+}
+
+.profile-details-section button {
+  background-color: #137;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.profile-details-section button:hover {
+  background-color: #0056b3;
+}
